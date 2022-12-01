@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Gemunu Libre";
+    src: url("../../fonts/GemunuLibre-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Genos";
+    src: url("../../fonts/Genos-VariableFont_wght.ttf");
+}
+footer{
+
+    width: 100%;
+    height: 454px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer-box{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-trademark, .footer-numbers{
+    justify-content: flex-end;
+}
+.footer-trademark-middletext{
+
+font-family: 'Genos';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+}
+.footer-numbers{
+
+font-family: 'Gemunu Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 35px;
+}
+.footer-trademark-bottomtext{
+
+font-family: 'Gemunu Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 14px;
+}
+
+.footer-links{
+    justify-content: center;
+
+}
+.footer-links a{
+    margin-bottom: 13px;
+font-size: 24px;
+line-height: 26px;
+}
+.footer-logo{
+    font-family: 'Genos';
+font-style: normal;
+font-weight: 400;
+font-size: 100px;
+height: 100px;
+}
+.gray{
+    color: #6F6F6F;
+
+;
+}

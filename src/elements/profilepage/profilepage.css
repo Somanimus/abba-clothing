@@ -1,0 +1,69 @@
+.acc-info{
+    margin-top: 185px;
+}
+.usr-feed-box{
+    display: flex;
+    justify-content: space-around;
+}
+.acc-name{
+    font-family: 'Gemunu Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+}
+.acc-pic{
+    margin-bottom: 21px;
+}
+.acc-pic img{
+    margin-bottom: 25px;
+}
+.acc-last-been{
+font-family: 'Gemunu Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 13px;
+}
+.btn-small{
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-wide{
+    width: 251px;
+height: 40px;
+background: #000000;
+border-radius: 8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: white;
+margin: 0 10px;
+font-size: 24px;
+}
+.acc-btn-box{
+    margin-bottom: 62px;
+    display: flex;
+    justify-content: center;
+}
+.usr-feed-sort{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+.usr-feed-btn{
+    border: none;
+    font-size: 24px;
+    background-color: white;
+}
+.usr-feed-btn-active{
+    border-bottom: 2px solid black;
+}

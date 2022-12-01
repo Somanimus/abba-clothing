@@ -1,0 +1,171 @@
+.intro-section{
+
+    width: fit-content;
+    position: relative;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-text-box{
+    height: 384px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 63px;
+    border-radius: 10px;
+    text-align: start;
+    position: relative
+
+}
+.intro-text-box h1, .intro-text-box p{
+    margin: 0;
+    width: 434px;
+}
+.intro-text-box h1{
+        font-weight: 400;
+        padding: 0;
+        line-height: 145px;
+}
+.phone-box{
+    position: absolute;
+    top: 26px;
+    right: 12%;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    height: 530px;
+    width: 255px;
+    border-radius: 30px;
+    z-index: 3;
+
+
+}
+.phone-text-box{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 25%;
+    left: 12%;
+}
+.phone-pic{
+    object-fit: cover;
+}
+.phone-text-box .logo-text{
+    font-size: 55px;
+    line-height: 45px;
+    margin: 0px;
+    margin-bottom: 18px;
+    height: fit-content;
+}
+
+.intro-text-box p {
+    font-size: 24px;
+    font-family: "Gemunu Libre";
+    font-weight: 400px;
+    margin-top: 5px;
+    width: 400px;
+}
+.regs-text{
+    margin:auto ;
+    font-size: 7px;
+    text-align: end;
+    width: 145px;
+    color: #606060;
+
+}
+.intro-banner{
+    margin-bottom: 12px;
+}
+
+
+.intro-text-box h1{
+    font-family: 'Genos';
+    font-size: 200px;
+}
+.button-text{
+    width: 145px;
+    height: 39px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+}
+.feed-section{
+    width: 100%;
+}
+.feed-filter-box{
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feed-filter-box button{
+ background-color: white;
+ border: none;
+ font-family: 'Gemunu Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+height: fit-content;
+}
+.feed-filter-box .button-active{
+    border-bottom: 1px solid black;
+}
+.feed-content-box{
+    margin: auto;
+    width: 1338px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feed-nav-box{
+    height: 361px;
+    width: 100%;
+    display: flex;
+}
+.feed-nav-box div{
+ width: 40%;
+ height: 100%;
+}
+.feed-nav-box .nav-btn-box{
+ width: 20%;
+}
+.nav-btn-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-btn-box button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Gemunu Libre';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+}
+.nav-btn-active{
+    background-color: black;
+    color: white;
+}
+.nav-social-box{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.nav-social-box a {
+    margin-right: 50px;
+    margin-bottom: 16px;
+}
