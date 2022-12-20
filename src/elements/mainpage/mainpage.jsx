@@ -1,9 +1,37 @@
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import React from 'react';
 import Item from './item/item';
 import './mainpage.css'
 
 const MainPage = () => {
-    return (
+    const [categoryfilter, setCategoryfilter] = useState('')
+    const [favors, setfavors] = useState([])
+    const [query, setquery] = useState('')
+   useEffect(() => {
+     const getFavors = async function () {
+        const URL = 'http://localhost:8000/api/favors'
+        const response = await axios.get(URL)
+        const data = response.data
+        setfavors(data)
+        console.log(data)
+     } 
+     getFavors()
+      
+    }, [])
+    const [categories, setcategories] = useState([])
+    useEffect(() => {
+     const getCategories = async function () {
+        const URL = 'http://localhost:8000/api/categories'
+        const response = await axios.get(URL)
+        const data = response.data
+        setcategories(data)
+     } 
+     getCategories()
+      
+    }, [])
+ 
+   return (
        <main>
             <div className='intro-section'>
 
@@ -24,29 +52,39 @@ const MainPage = () => {
             </div>
             <div className='feed-section'>
                 <div className="feed-filter-box">
-                    <button>Новые</button>
 
-                    <button className='button-active'>Лента</button>
+                    <input type="text" placeholder='search...' className='search'  onChange={ (e) => setquery(e.target.value) } />
+            <div className='dropdown-categories-box dropdown' >
+                <p>categories</p>
+                <div className="dropdown-content">
+                    <div>
+                        <button value={''} onClick={e => setCategoryfilter(e.target.value)}>all</button>
+                    </div>
+                    {categories.map(function (item) {
+                        return  (
+                            <div key={item.id}>
+                                <button onClick={e => setCategoryfilter(e.target.value)}  value={item.title}>{item.title}</button>
+                            </div>
+                        )
+                    }
+                    )}
+                </div>
+            </div>
 
-                    <button>Популярные</button>
+
                 </div>
 
                 <div className="feed-content-box">
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
-                   <Item/> 
+                    {favors.filter(item => item.category_title.includes(categoryfilter)).filter(item => item.title.toLowerCase().includes(query) || item.username.toLowerCase().includes(query)).map(function (item) {
+                        return  (
+                            <Item data={item} key={item.id}/>
+                       )
+                    }
+                    )}
                 </div>
                 <div className="feed-nav-box">
-                    <div></div>
+                    <div>
+                    </div>
                     <div className="nav-btn-box">
                     <button className="feed-button nav-btn-active">1</button>
                     <button className="feed-button">2</button>

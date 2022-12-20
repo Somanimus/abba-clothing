@@ -1,13 +1,14 @@
 import React from 'react';
 import './item.css'
 
-const Item = () => {
+const Item = (props ) => {
     return (
         <div className='feed-item'>
-           <img src="/media/itemPic.png" className='item-pic' alt="" /> 
+           {props.data.photo === null ? "" : <img src={props.data.photo} className='item-pic' alt="" /> }
            <div className="item-info-box">
                <div className='item-desc'>
-                <p>Просьба не звонить, для уточнения наличия размера пишите на вотсап</p>
+                <h2>{props.data.title}</h2>
+                <p>{props.data.description}</p>
 
                 </div> 
                <div className="item-bottom">

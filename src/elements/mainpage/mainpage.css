@@ -83,7 +83,24 @@ main{
     margin-bottom: 12px;
 }
 
-
+.search{
+    height: 30px;
+    width: 30%;
+    font-family: 'Gemunu Libre';
+    font-size: 24px;
+}
+.dropdown-categories-box p i {
+    padding: 8px 8px;
+    margin-left: 5px;
+}
+.dropdown-categories-box p {
+    border: 1px solid rgb(161, 161, 161);
+    color: rgb(161, 161, 161);
+    border-radius: 2px;
+    font-size: 24px;
+    font-family: 'Gemunu Libre';
+    padding: 6px;
+}
 .intro-text-box h1{
     font-family: 'Genos';
     font-size: 200px;

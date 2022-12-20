@@ -1,23 +1,17 @@
 import React from 'react';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import "./header.css"
 
+
 const Header = () => {
+
     return (
         <header>
-            <div className='dropdown-categories-box dropdown' >
-                <p>категории <i className="arrow down"></i></p>
-                <div className="dropdown-content">
-
-                </div>
-            </div>
-
             <div className='dropdwon-misc-box dropdown'>
                <p>другое <i className="arrow down"></i></p>
                 <div className="dropdown-content">
                     <a href="#">профиль</a>
-                    <a href="#">КОНТАКТЫ</a>
-                    <a href="#">КОНФЕНЕДЦИАЛ</a>
-                    <a href="#">РЕКЛАМА</a>
                     <a href="#">УВЕДОМЛЕНИЯ</a>
 
                 </div>
@@ -36,11 +30,6 @@ const Header = () => {
             <div className='notifications-button'>
                 <img src="/media/mail-icon.png" alt="mail-icon" />
             </div>
-
-            <div className='search-button'>
-                <img src="/media/search-icon.png" alt="search-icon" />
-            </div>
-
         </header>
    );
 };

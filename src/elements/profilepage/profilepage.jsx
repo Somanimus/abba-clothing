@@ -1,7 +1,21 @@
+import axios from 'axios';
 import React from 'react';
 import Item from '../mainpage/item/item';
 import './profilepage.css'
+       
+   
+   
+   
+   
+const fetchFunction = async ()   => {
 
+    console.log(  await  axios.get('http://localhost:8000/api/favors/', {
+        headers: {
+            'accept': 'application/json',
+            'X-CSRFToken': 'OOyWwqmR0GWYTP9fe96Sb6efXymE5EGpa3GK2fjJDFWem7zx3FJDGoyYf2UOHoQ3',
+        }
+    }))
+}
 const ProfilePage = () => {
     return (
         <div className='profile-page'>
@@ -21,7 +35,7 @@ const ProfilePage = () => {
             <div className="usr-feed">
                 <div className="usr-feed-sort">
                     <button className='usr-feed-btn usr-feed-btn-active'>Мои объявления</button>
-                    <button className='usr-feed-btn '>Деактивированные</button>
+                    <button className='usr-feed-btn ' onClick={fetchFunction}>Деактивированные</button>
                 </div>
                 <div className="usr-feed-box">
                     <Item/>

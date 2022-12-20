@@ -8,8 +8,8 @@
 }
 .feed-item{
     width: 29%;
-    height: 680px;
-    margin: 5px 24px;
+    height: fit-content;
+    margin: 10px 24px;
 }
 .item-pic{
     width: 397px;
